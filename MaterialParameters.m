@@ -24,6 +24,7 @@ EF = EF_J./e; %Fermi energy, in eV
 hw_pl = hbar./e*sqrt(n*e.^2./(me*mb.*epsvac.*epsInf)); %Plasma frequency, in eV
 wFw0 = EF./hw0; %Ratio of the Fermi and phonon energies
 TF = EF_J/kB; %Fermi temperature, in K
+Tph = hbar.*w0/kB; %Phonon temperature, in K
 
 % Input parameters of conductivity.m:
 alpha = 1./(2*hbar*w0)*e^2/(4*pi*epsvac)*sqrt(2*mb*me*w0/hbar)*(1/epsInf-1/eps0); %Fröhlich coupling constant
