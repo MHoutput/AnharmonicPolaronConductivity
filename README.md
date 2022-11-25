@@ -8,7 +8,8 @@ This code was used to produce figures 4-6 in the above article.
 
 ## Basic use
 
-The code can simply be downloaded and run in Matlab, no compilation is required.
+The code can simply be downloaded and run in Matlab, no compilation is required. If necessary, add the folder
+"Internal functions" to the Matlab path.
 The function conductivity.m calculates the conductivity as a function of frequency, given several dimensionless
 material parameters which are defined in the accompanying article. The complete list is:
 - The Fröhlich coupling constant, $\alpha$
