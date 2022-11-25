@@ -19,6 +19,7 @@ The function conductivity.m calculates the conductivity as a function of frequen
 The script MaterialParameters.m provides a way to calculate most of the above parameters from more familiar parameters (phonon frequency, electron band mass, low- and high-frequency dielectric constants, unit cell volume, and electron density).
 
 The script main.m provides an example use, which calculates and plots the optical conductivity for the material parameters given in figure 5c. In this file, the conductivity is calculated as:
+
 `sigma = conductivity(omega,alpha,T0,T1,V0,Eryw0,rs,T,model)`
 
 ## Further use
@@ -26,6 +27,7 @@ The script main.m provides an example use, which calculates and plots the optica
 The function conductivity.m uses the functions implemented in the folder "Internal functions", which calculate the dynamical structure factor $S(k,\omega)$, the phonon spectral function $M(k,\omega)$, the memory function $\Sigma(k,\omega)$, and so on. These functions have some additional functionality.
 
 The function MemFunc.m calculates the memory function $\Sigma(k,\omega)$, which is directly related to the conductivity. With this function, one can calculate the polaron inverse effective mass and inverse relaxation time:
+
 `[Sigma,tauinv,minv] = MemFunc(omega,alpha,T0,T1,V0,Eryw0,rs,T,model)`
 
 The function Sint.m implements four models for the dynamical structure factor are implemented: the single polaron model, the Hartree-Fock model, the Lindhard (RPA) model, and the Hubbard model, all for the isotropic homogeneous electron gas. If a different model for the dynamical structure factor is desired, it can be implemented in Sint.m, under the model 'UserDefined'.
