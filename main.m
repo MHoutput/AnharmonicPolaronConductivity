@@ -3,6 +3,9 @@
 % This script reproduces the solid orange curve of figure 5c of the
 % accompanying article (arXiv:2210.10696).
 
+% Make sure to add the folder "Internal functions" to the MatLab path
+% before running this script.
+
 % Set the input values:
 omega = 0:0.01:4;
 alpha = 1;
