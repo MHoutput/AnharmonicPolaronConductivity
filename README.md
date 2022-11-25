@@ -15,4 +15,7 @@ The function conductivity.m calculates the conductivity as a function of frequen
 - The ratio of the Rydberg energy and phonon energy of the material, $E_{Ry} / \hbar \omega_{\text{LO}}$
 - The Wigner-Seitz radius, in units of the material's Bohr radius, $r_s$
 - The temperature, $T$, in units of the phonon temperature $\hbar \omega_{\text{LO}}/ k_B$
+
+The script MaterialParameters.m provides a way to calculate most of the above parameters from more familiar parameters.
+
 The script main.m provides an example use, which calculates and plots the optical conductivity for the material parameters given in figure 5c.
