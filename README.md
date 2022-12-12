@@ -1,4 +1,4 @@
-# AnharmonicPolaronConductivity
+# Anharmonic polaron conductivity
 
 This Matlab code can be used to calculate the optical conductivity (real and imaginary part), relaxation time,
 and spectroscopic effective mass of an anharmonic large polaron gas, in the weak interaction approximation.
